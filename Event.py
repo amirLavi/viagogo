@@ -103,6 +103,9 @@ if __name__ == '__main__':
                 print("please input a real coordinate between <-10,-10> to <10,10>")
                 coordinate = tuple(int(x.strip()) for x in input().split(','))
             break
+        except KeyboardInterrupt:
+            print('\ninterrupted!')
+            sys.exit(1)
         except:
             print("make sure to print tuple form <e.g (10,5)>")
 
